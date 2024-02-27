@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3</title>
+    <link rel="stylesheet" href="Bai_3.css" />
+  </head>
+  <body>
+    <form class="title-form">
+      <div>
+        <label for="name">Username:</label>
+        <input type="text" name="name" id="name" class="format-input" />
+      </div>
+      <div class="title-password">
+        <label for="password"> Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="format-input"
+        />
+      </div>
+      <div>
+        <label for="city">City of <br />Employment:</label>
+        <input type="city" name="city" id="city" class="format-input" />
+      </div>
+      <div>
+        <label for="web">Web server:</label>
+        <select class="format-input" id="server">
+          <option value="web">-Choose a server-</option>
+          <option value="web">IIS</option>
+          <option value="web">Apache Tomcat</option>
+        </select>
+      </div>
+      <div class="format-input-radio">
+        <label>Please specify<br />your role:</label>
+        <div><input type="radio" name="people" />Admin</div>
+        <div><input type="radio" name="people" />Engineer</div>
+        <div><input type="radio" name="people" />Manager</div>
+        <div><input type="radio" name="people" />Guest</div>
+      </div>
+      <div class="format-checkbox">
+        <label
+          >Single Sign-on <br />
+          to the following:
+        </label>
+        <div><input type="checkbox" name="mail" />Mail</div>
+        <div><input type="checkbox" name="payroll" />Payroll</div>
+        <div><input type="checkbox" name="selt-service" />Selt-service</div>
+      </div>
+      <div class="location-button">
+        <button type="submit" id="button-submit">Login</button>
+        <button type="reset" id="button-reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>

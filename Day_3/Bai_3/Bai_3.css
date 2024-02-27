@@ -1,0 +1,67 @@
+.title-form {
+  margin-bottom: 10px;
+}
+
+.format-input {
+  width: 200px;
+  height: 20px;
+  margin-bottom: 10px;
+  border-color: rgb(144, 144, 233);
+  border-width: 1px;
+  border-style: solid;
+  font-size: 15px;
+}
+
+#name {
+  margin-left: 30px;
+}
+#password {
+  margin-left: 33px;
+}
+#city {
+  margin-left: 12px;
+  position: relative;
+  bottom: 10px;
+}
+#server {
+  margin-left: 23px;
+  height: 25px;
+  width: 150px;
+}
+#button-submit {
+  border-color: rgb(144, 144, 233);
+  width: 55px;
+  height: 23px;
+  background: transparent;
+  background-color: aliceblue;
+  border-radius: 10%;
+  border-width: 1px;
+}
+#button-reset {
+  border-color: rgb(144, 144, 233);
+  width: 55px;
+  height: 23px;
+  background: transparent;
+  background-color: aliceblue;
+  border-radius: 10%;
+  border-width: 1px;
+}
+
+.format-input-radio {
+  margin-top: 30px;
+}
+.format-input-radio div {
+  position: relative;
+  left: 120px;
+  bottom: 50px;
+}
+.format-checkbox div {
+  position: relative;
+  left: 120px;
+  bottom: 50px;
+}
+.location-button {
+  position: relative;
+  left: 120px;
+  bottom: 30px;
+}

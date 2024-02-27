@@ -1,0 +1,74 @@
+body {
+  margin: 30px 0px 0px 30px;
+}
+
+u {
+  color: orange;
+}
+
+/* rgb(110, 79, 44) */
+header {
+  width: 572px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+  overflow: auto;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(110, 79, 44);
+}
+
+.navbar a {
+  color: rgb(110, 79, 44);
+  text-decoration: none;
+  padding: 15px 0px 15px 0px;
+  display: inline-block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: orange;
+}
+
+.address-1 a {
+  background-color: rgb(110, 79, 44);
+  color: white;
+  padding: 15px 30px 15px 30px;
+}
+.address-2 a {
+  color: rgb(110, 79, 44);
+  padding: 15px 30px 15px 30px;
+}
+
+.navbar li {
+  float: left;
+  text-align: center;
+}
+
+.paragraph {
+  color: grey;
+}
+
+.main-form {
+  background-color: rgb(228, 228, 221);
+  width: 1290px;
+  height: 450px;
+}
+
+.form-paragraph {
+  width: 300px;
+  margin-left: 40px;
+  position: relative;
+  top: 60px;
+}
+
+.main-iframe {
+  position: relative;
+  left: 486px;
+  bottom: 187px;
+  border: 0;
+}
