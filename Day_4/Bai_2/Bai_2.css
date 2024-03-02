@@ -1,0 +1,72 @@
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.alfa-slab one-regular {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(58, 38, 23);
+  font-size: 30px;
+  margin-top: 50px;
+}
+h2 {
+  text-align: center;
+  font-family: "Alfa Slab One", serif;
+  font-size: 50px;
+  color: rgb(58, 38, 23);
+}
+
+input::placeholder {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+form {
+  margin-left: 350px;
+}
+
+.cols-1 input {
+  padding: 15px;
+  margin: 5px 10px 5px 10px;
+  width: 300px;
+  border-color: rgb(206, 202, 202);
+  border-style: solid;
+  border-width: 1px;
+}
+.cols-2 input {
+  padding: 15px;
+  margin: 5px 10px 5px 10px;
+  width: 300px;
+  border-color: rgb(206, 202, 202);
+  border-style: solid;
+  border-width: 1px;
+}
+.cols-3 input {
+  padding: 15px;
+  margin: 5px 10px 5px 10px;
+  width: 300px;
+  border-color: rgb(206, 202, 202);
+  border-style: solid;
+  border-width: 1px;
+}
+.cols-3 button {
+  width: 333px;
+  background-color: rgb(176, 51, 43);
+  border: 0px;
+  border-radius: 4px;
+  text-align: center;
+  height: 45px;
+  margin-left: 10px;
+  font-family: "Alfa Slab One", serif;
+  color: white;
+  font-size: 15px;
+}
