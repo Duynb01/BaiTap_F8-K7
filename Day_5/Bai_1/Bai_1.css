@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Lobster;
+  src: url("../font/Lobster-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../font/Lato-Regular.ttf");
+  font-weight: 400;
+}
+body {
+  font-family: Lato;
+}
+h2 {
+  font-family: Lobster, sans-serif;
+  font-size: 50px;
+}
+span {
+  color: red;
+}
+.form-main {
+  margin-left: 200px;
+  width: 626px;
+  /* width: 526px; */
+}
+
+.input-1,
+.input-2,
+.input-3 {
+  width: 502px;
+  padding: 13px;
+  margin-bottom: 20px;
+}
+select {
+  padding: 10px;
+  width: 526px;
+  margin-bottom: 20px;
+}
+textarea {
+  width: 520px;
+  margin-bottom: 20px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  margin-left: 190px;
+  position: relative;
+  background: transparent;
+  border: 0px;
+  background-color: red;
+  color: white;
+}
+.fa-solid {
+  padding: 13px;
+  background-color: rgb(141, 130, 130);
+}

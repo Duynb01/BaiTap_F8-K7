@@ -1,0 +1,29 @@
+span {
+  font-weight: 700;
+}
+label::before {
+  content: "+";
+  font-size: 20px;
+  padding-right: 10px;
+}
+.bar-text p {
+  margin-left: 40px;
+  display: none;
+}
+h2 {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  background-color: rgb(216 88 36);
+  color: white;
+  font-size: 20px;
+}
+input[type="checkbox"]:checked ~ h2 label::before {
+  content: "-";
+  font-size: 20px;
+  padding-left: 5px;
+}
+input[type="checkbox"]:checked ~ .bar-text p {
+  display: block;
+}
