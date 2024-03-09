@@ -1,0 +1,56 @@
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+  font-family: Nunito;
+  height: 90vh;
+  width: 99vw;
+  text-align: center;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("../Ex_3/font/Nunito-Regular.ttf");
+  font-weight: 400;
+}
+menu {
+  padding: 0px;
+}
+.form-main {
+  width: 350px;
+  height: 400px;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #ff574d;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  justify-content: center;
+  background-color: white;
+  display: inline-block;
+}
+span {
+  font-size: 30px;
+}
+.logo > span {
+  font-weight: 700;
+  color: white;
+}
+.icon > span {
+  color: #ff574d;
+  font-weight: 700;
+}
+
+.logo {
+  margin-top: 100px;
+}

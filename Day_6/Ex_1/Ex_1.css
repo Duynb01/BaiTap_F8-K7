@@ -1,0 +1,106 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("../Ex_1/font/OpenSans_Condensed-Regular.ttf");
+  font-weight: 400;
+}
+body {
+  font-family: OpenSans;
+  color: #666;
+}
+li {
+  list-style-type: none;
+  border: 1px gainsboro solid;
+  display: block;
+  height: 50px;
+  text-align: center;
+}
+ul {
+  display: flex;
+}
+nav {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+.fa-solid {
+  font-size: 20px;
+  padding: 12px;
+}
+.icon-1 {
+  width: 70px;
+}
+.icon-1 > div {
+  display: inline-block;
+  margin-top: 2px;
+  width: 64px;
+  height: 45px;
+}
+.icon-2 {
+  width: 150px;
+}
+.icon-2 > div {
+  display: inline-block;
+  margin-top: 2px;
+  width: 144px;
+  height: 45px;
+}
+.icon-3 {
+  width: 150px;
+}
+.icon-3 > div {
+  display: inline-block;
+  margin-top: 2px;
+  width: 144px;
+  height: 45px;
+}
+.icon-4 {
+  width: 150px;
+}
+.icon-4 > div {
+  display: inline-block;
+  margin-top: 2px;
+  width: 144px;
+  height: 45px;
+}
+.icon-5 {
+  width: 100px;
+}
+.icon-5 > div {
+  display: inline-block;
+  margin-top: 2px;
+  width: 94px;
+  height: 45px;
+}
+.icon-6 {
+  width: 500px;
+}
+.icon-7 {
+  width: 150px;
+}
+.icon-7 > div {
+  display: inline-block;
+  margin-top: 2px;
+  width: 144px;
+  height: 45px;
+}
+.icon-1:hover .hover_icon {
+  background-color: #2da5da;
+}
+.icon-2:hover .hover_icon {
+  background-color: #2da5da;
+}
+
+.icon-3:hover .hover_icon {
+  background-color: #2da5da;
+}
+.icon-4:hover .hover_icon {
+  background-color: #2da5da;
+}
+.icon-5:hover .hover_icon {
+  background-color: #2da5da;
+}
+.icon-7:hover .hover_icon {
+  background-color: #2da5da;
+}
