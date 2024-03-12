@@ -54,3 +54,35 @@ span {
 .logo {
   margin-top: 100px;
 }
+menu p {
+  color: white;
+}
+
+button {
+  width: 140px;
+  height: 40px;
+  background: transparent;
+  background-color: white;
+  color: #ff574d;
+  border: 0px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+li {
+  display: inline;
+  list-style-type: none;
+  width: 40px;
+  height: 40px;
+  background-color: aqua;
+  margin: 10px;
+}
+ul {
+  display: inline-flex;
+}
+.fa-brands {
+  font-size: 25px;
+}
+.list-link {
+  display: block;
+  justify-content: space-between;
+}

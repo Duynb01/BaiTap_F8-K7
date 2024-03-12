@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Asap, sans-serif;
+}
+@font-face {
+  font-family: Asap;
+  src: url(../Ex_3/font/Asap_Condensed-Regular.ttf);
+  font-weight: 400;
+}
+h1 {
+  color: rgb(88 85 74);
+}
+.line {
+  border: 1px solid rgba(80, 73, 73, 0.123);
+  height: 1px;
+  width: 64%;
+  position: relative;
+  bottom: 15px;
+  left: 440px;
+}
+.background-frame {
+  margin-top: 20px;
+  width: 90%;
+  margin-inline: auto;
+  height: 93vh;
+}
+.navbar ul li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 130px;
+  height: 60px;
+  border-radius: 99px;
+  padding-top: 10px;
+  margin-top: 20px;
+  background-color: rgb(229 229 229);
+  color: black;
+}
+.navbar ul li a:hover {
+  color: #fff;
+  background-color: rgb(174 124 55);
+}
+.quantity {
+  display: block;
+  font-style: italic;
+  font-size: 14px;
+}
+.address {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+img {
+  display: inline-block;
+  width: 320px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.inf div {
+  padding: 20px;
+  color: white;
+}
+h2 {
+  position: relative;
+  bottom: 180px;
+}
+h2 ~ span {
+  position: relative;
+  bottom: 90px;
+}
+h2 + span {
+  font-weight: 700;
+}
+.image {
+  width: 320px;
+  height: 197px;
+}
+.cols_1 {
+  display: flex;
+  justify-content: space-between;
+}
+.cols_2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
