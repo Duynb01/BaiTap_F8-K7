@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Manrope;
+}
+@font-face {
+  font-family: Manrope;
+  src: url("../Ex_1/font/Manrope-Regular.ttf");
+  font-weight: 400;
+}
+body {
+  background: url("https://watermark.lovepik.com/photo/20211122/large/lovepik-business-team-meeting-room-to-discuss-picture_500710780.jpg")
+    no-repeat 0 0 / cover scroll;
+  width: 100vw;
+  height: 100vh;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+ul {
+  list-style-type: none;
+  display: inline-flex;
+}
+li {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: 700;
+  position: relative;
+  color: black;
+}
+.down {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+header {
+  display: inline-flex;
+  margin: 20px 100px;
+}
+.navbar {
+  display: inline-block;
+  margin-left: 30%;
+}
+li:hover {
+  color: rgba(0, 0, 0, 0.466);
+}
+.box {
+  width: 85%;
+  height: 515px;
+  background-color: aliceblue;
+  margin-inline: 100px;
+  border-radius: 8px;
+  font-weight: 700;
+  display: inline-flex;
+  /* visibility: hidden; */
+}
+.title {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.box > div {
+  padding: 30px;
+  /* background-color: aqua; */
+  height: 50%;
+}
+.list_box_left {
+  width: 300px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  /* background-color: aqua; */
+}
+.box_left {
+  margin-bottom: 60px;
+}
+.list_box_right {
+  width: 740px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 26px;
+  /* background-color: aqua; */
+}
+label:hover ~ .box {
+  /* visibility: visible; */
+  /* bị lỗi phần hover */
+}

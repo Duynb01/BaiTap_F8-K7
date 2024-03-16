@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito;
+}
+@font-face {
+  font-family: Nunito;
+  src: url("../Ex_2/font/Nunito-Regular.ttf");
+  font-weight: 400;
+}
+body {
+  background: rgb(127 127 127);
+  position: relative;
+}
+body > div {
+  width: 400px;
+  height: 100vh;
+  background-color: #fff;
+  position: absolute;
+  right: 0px;
+}
+.title {
+  background-color: rgb(243 243 243);
+  position: relative;
+}
+.title > div {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 99px;
+  background-color: blue;
+  color: #fff;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  left: 165px;
+  top: 15px;
+}
+.title h2 {
+  padding: 15px 30px;
+  display: inline-block;
+  position: relative;
+}
+.title .fa-solid {
+  font-size: 25px;
+  color: red;
+  position: absolute;
+  right: 0px;
+  bottom: 20%;
+  left: 90%;
+  cursor: pointer;
+  width: 39px;
+  height: 39px;
+  border-radius: 99px;
+}
+header {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0px;
+  padding: 20px;
+}
+header > h3 {
+  display: inline-block;
+}
+header > span {
+  display: inline-block;
+  position: absolute;
+  right: calc(0% + 20px);
+  color: red;
+}
+header > p {
+  font-size: 13px;
+  padding: 10px 0px;
+}
+button {
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+header button:nth-of-type(1) {
+  background: transparent;
+  border: 1px solid rgb(173, 168, 168);
+  color: rgb(173, 168, 168);
+}
+button + button {
+  border: none;
+  background-color: rgb(64 96 243);
+  color: #fff;
+}
+header > div {
+  margin-top: 10px;
+}
+header > div > div > .fa-solid {
+  padding: 7px;
+  font-size: 20px;
+}
+header > div > div {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgb(85, 85, 250);
+  border-radius: 99px;
+  display: inline-block;
+  color: rgb(85, 85, 250);
+}
+header > div > span {
+  margin-left: 80px;
+}
+img {
+  display: inline-block;
+  width: 80px;
+}
+article .image {
+  padding: 10px;
+}
+article {
+  height: 130px;
+  width: 100%;
+  display: inline-flex;
+  padding: 15px 0px 15px 25px;
+  border: 1px solid rgb(212, 210, 210);
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+.quantity {
+  height: 30px;
+  width: 100px;
+  border: 1px solid rgb(173, 168, 168);
+  text-align: center;
+  border-radius: 99px;
+  justify-content: space-between;
+  position: relative;
+  padding: 4px;
+}
+.quantity::before {
+  content: "+";
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+.quantity::after {
+  content: "-";
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.inf_product {
+  display: inline-block;
+  padding: 0px 10px;
+}
+.inf_product .fa-solid {
+  display: inline-block;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.inf_product > div {
+  margin-top: 12px;
+}
+.inf_product > div > span {
+  margin-left: 70px;
+}
+article > div > span {
+  display: inline-block;
+}
+article div {
+  display: inline-block;
+}
+.product {
+  height: 295px;
+  width: 100%;
+  overflow: auto;
+}
+.product::-webkit-scrollbar-thumb {
+  border-radius: 99px;
+  background-color: rgb(146, 141, 141);
+}
+.product::-webkit-scrollbar {
+  width: 8px;
+}
