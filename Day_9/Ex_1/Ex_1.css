@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../Ex_1/font/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Space Grotes";
+  src: url("../Ex_1/font/SpaceGrotesk-Regular.ttf");
+  font-weight: 400;
+}
+.box {
+  width: 80%;
+  margin: 10px auto;
+}
+.describe {
+  width: 270px;
+  text-align: end;
+  /* margin-right: 10px; */
+  position: relative;
+}
+.line {
+  height: 110px;
+  border: 1px solid #b2b2b442;
+  position: relative;
+  top: 20px;
+  margin: 0px 30px;
+}
+h2 {
+  font-family: "Space Grotes";
+}
+p {
+  color: #b2b2b4;
+  margin: 10px 0px;
+  line-height: 25px;
+}
+article {
+  display: flex;
+  width: 420px;
+  margin-bottom: 20px;
+}
+.fa-solid {
+  /* /* background-color: blue; */
+  width: 10px;
+  height: 10px;
+  font-size: 11px;
+  color: green;
+  border-radius: 99px;
+  box-shadow: 1px 1px 3px 5px #b2b2b4;
+  position: absolute;
+  right: 923px;
+}
+.year {
+  position: relative;
+  text-align: center;
+  top: 5px;
+}
+.year span {
+  position: absolute;
+  width: 85px;
+}
+button {
+  padding: 5px 10px;
+  border-radius: 99px;
+  border: 0;
+  font-weight: 700;
+  color: #626264;
+}
+article:hover .describe {
+  text-align: left;
+  right: -330px;
+}
+article:hover .year {
+  text-align: left;
+  right: 140px;
+}
+article:hover button {
+  color: #fff;
+  background-color: #a26f5a;
+}

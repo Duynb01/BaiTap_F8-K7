@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+article {
+  width: 300px;
+  padding: 15px;
+  border: 2px solid #eeeef1;
+  margin: 30px auto 0px;
+  position: relative;
+}
+.line {
+  outline: 1px solid #fff;
+}
+h2 {
+  margin: 30px auto 10px;
+  font-size: 19px;
+}
+p {
+  font-size: 14px;
+  color: #8b8b8e;
+  width: 268px;
+}
+a {
+  color: #8b8b8e;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+.show {
+  padding: 15px;
+}
+
+.show .fa-solid {
+  font-size: 40px;
+}
+.hover-show {
+  position: absolute;
+  top: 70px;
+  color: black;
+  width: 268px;
+  padding-left: 15px;
+  z-index: 1;
+}
+.more {
+  display: none;
+  padding: 0;
+  margin-top: 50px;
+}
+.more .fa-solid {
+  font-size: 15px;
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 99px;
+}
+.overlay-item-1 {
+  background-color: rgba(255, 68, 0, 0.671);
+  top: 50px;
+  bottom: 339px;
+  left: 136px;
+  right: 930px;
+  position: fixed;
+  display: none;
+  z-index: 0;
+}
+.overlay-item-2 {
+  background-color: rgba(255, 68, 0, 0.671);
+  top: 50px;
+  bottom: 339px;
+  left: 533px;
+  right: 533px;
+  position: fixed;
+  display: none;
+  z-index: 0;
+}
+.overlay-item-3 {
+  background-color: rgba(255, 68, 0, 0.671);
+  top: 50px;
+  bottom: 339px;
+  left: 930px;
+  right: 137px;
+  position: fixed;
+  display: none;
+  z-index: 0;
+}
+.overlay-item-4 {
+  background-color: rgba(255, 68, 0, 0.671);
+  top: 302px;
+  bottom: 88px;
+  left: 138px;
+  right: 930px;
+  position: fixed;
+  display: none;
+  z-index: 0;
+}
+.overlay-item-5 {
+  background-color: rgba(255, 68, 0, 0.671);
+  top: 302px;
+  bottom: 88px;
+  left: 535px;
+  right: 533px;
+  position: fixed;
+  display: none;
+  z-index: 0;
+}
+.overlay-item-6 {
+  background-color: rgba(255, 68, 0, 0.671);
+  top: 302px;
+  bottom: 88px;
+  left: 930px;
+  right: 137px;
+  position: fixed;
+  display: none;
+  z-index: 0;
+}
+article:hover {
+  background: url("https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149333684.jpg?size=626&ext=jpg&ga=GA1.1.617347410.1710837787&semt=ais")
+    no-repeat 0 0 / cover scroll;
+  opacity: 0.4;
+}
+.hover-show .fa-solid:hover,
+a:hover + .fa-solid {
+  background-color: white;
+  color: black;
+}
+article:hover .more,
+article:hover .overlay-item-1,
+article:hover .overlay-item-2,
+article:hover .overlay-item-3,
+article:hover .overlay-item-4,
+article:hover .overlay-item-5,
+article:hover .overlay-item-6 {
+  display: block;
+}
+article:hover .show {
+  visibility: hidden;
+}
+article:hover .hover-show {
+  top: 0px;
+  transition: 0.5s ease;
+  color: white;
+}
+
+article:hover p,
+article:hover a {
+  color: white;
+}
+section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 80px;
+  justify-content: space-between;
+}
+body > div {
+  width: 80%;
+  margin: 20px auto;
+}
