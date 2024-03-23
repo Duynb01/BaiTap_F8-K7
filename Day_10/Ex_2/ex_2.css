@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  width: 700px;
+  margin: 90px auto 0px;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 10px;
+  border: 1px solid #cccccc2a;
+}
+label {
+  display: inline-block;
+  padding: 10px;
+  user-select: none;
+}
+input[id="tab_1"]:checked ~ nav ul li label[for="tab_1"],
+input[id="tab_2"]:checked ~ nav ul li label[for="tab_2"],
+input[id="tab_3"]:checked ~ nav ul li label[for="tab_3"],
+input[id="tab_4"]:checked ~ nav ul li label[for="tab_4"] {
+  background-color: #3397dc;
+  color: #fff;
+}
+nav ul li:hover label {
+  background-color: #3397dc;
+  color: #fff;
+}
+/* ---------------------------------Finish menu---------------------------- */
+.par-frame {
+  width: 694px;
+  margin: auto;
+  position: relative;
+}
+.par-1,
+.par-2,
+.par-3,
+.par-4 {
+  display: block;
+  position: absolute;
+  width: 694px;
+  padding: 25px;
+  overflow-x: scroll;
+  border: 1px solid #cccccc2a;
+  visibility: hidden;
+  transform-origin: top;
+}
+input[id="tab_1"]:checked ~ .par-frame .par-1,
+input[id="tab_2"]:checked ~ .par-frame .par-2,
+input[id="tab_3"]:checked ~ .par-frame .par-3,
+input[id="tab_4"]:checked ~ .par-frame .par-4 {
+  visibility: visible;
+}
+input[id="tab_1"]:checked ~ .par-frame .par-1,
+input[id="tab_2"]:checked ~ .par-frame .par-2,
+input[id="tab_3"]:checked ~ .par-frame .par-3,
+input[id="tab_4"]:checked ~ .par-frame .par-4 {
+  transition: transform 1s cubic-bezier(0, 1.09, 0.54, -1.07);
+  transform: rotateX(360deg);
+}

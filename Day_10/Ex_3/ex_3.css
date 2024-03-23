@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* #c94e44 */
+.box {
+  width: 80%;
+  height: 500px;
+  margin: 30px auto;
+  background-color: #323543;
+  position: relative;
+}
+.mail-packaging {
+  width: 260px;
+  height: 160px;
+  position: absolute;
+  top: calc(50% - 80px);
+  right: calc(50% - 130px);
+  transition-property: padding-top;
+  transition-duration: 500ms;
+}
+.lap {
+  width: 0;
+  height: 0;
+  border-width: 80px 130px;
+  border-style: solid;
+  border-color: #cb4e43 transparent transparent transparent;
+  position: absolute;
+  top: calc(50% - 80px);
+  right: calc(50% - 130px);
+  z-index: 3;
+}
+.hcn .mail-frame {
+  width: 0;
+  height: 0;
+  border-width: 80px 130px;
+  border-style: solid;
+  border-color: transparent #e06155 #e06155 #dd564b;
+  position: absolute;
+  top: calc(50% - 80px);
+  right: calc(50% - 130px);
+  z-index: 99;
+}
+.hcn .triangle-top {
+  width: 0;
+  height: 0;
+  border-width: 80px 130px;
+  border-style: solid;
+  border-color: #cb4e43 transparent transparent transparent;
+  position: absolute;
+  top: calc(50% - 80px);
+  right: calc(50% - 130px);
+  z-index: 1;
+}
+.mail-packaging:hover .lap {
+  transform-origin: top;
+  transform: rotateX(-180deg);
+  transition: all 100ms;
+}
+.letters {
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  position: absolute;
+  left: calc(50% - 100px);
+  bottom: 0;
+  z-index: 2;
+}
+.mail-packaging:hover .letters {
+  transform: translateY(-100%);
+  transform: scaleY(2.6);
+  transform-origin: bottom;
+  transition: transform 500ms ease-in-out;
+  z-index: 4;
+}
+.mail-packaging:hover {
+  transform: translateY(100px);
+  transition: transform 500ms;
+}
+.mail-packaging:hover {
+  padding-top: 10px;
+}
