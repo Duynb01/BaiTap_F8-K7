@@ -298,7 +298,7 @@ article .container-1 {
   display: flex;
   justify-content: space-between;
 }
-.part-3 img {
+.container-3 img {
   height: 600px;
 }
 .inf {
@@ -351,7 +351,7 @@ article .container-1 {
   display: flex;
   justify-content: space-between;
 }
-.part-4 img {
+.container-4 img {
   height: 600px;
 }
 .container-4 .inf {
@@ -373,3 +373,115 @@ article .container-1 {
 }
 
 /* Finish Section 4 */
+.part-5 {
+  background-color: #fef5f5;
+  margin-top: 200px;
+  padding-bottom: 100px;
+}
+.container-5 {
+  width: 1109px;
+  height: 400px;
+  margin: 120px 120px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* background-color: #03a66b; */
+  gap: 50px;
+}
+.container-5 img {
+  height: 550px;
+  margin-left: 120px;
+}
+.container-5 .inf {
+  margin: 90px;
+  width: 520px;
+}
+.container-5 .inf > span {
+  text-transform: none;
+  color: #f54b4b;
+  font-weight: 700;
+}
+.inf h2 {
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-family: Poppins-Bold;
+  width: 500px;
+  font-size: 38px;
+  line-height: 50px;
+}
+.icon {
+  display: flex;
+  gap: 50px;
+}
+.icon img {
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: -100px;
+}
+.icon .store {
+  width: 200px;
+  height: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.034);
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.icon .store span {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: black;
+}
+/* Finish Section 5 */
+footer .container-6 {
+  width: 1109px;
+  height: 300px;
+  margin: 80px 120px;
+  display: flex;
+  gap: 120px;
+  align-content: baseline;
+}
+.container-6 .title-footer {
+  width: 270px;
+  /* background-color: #f9ba45; */
+}
+.container-6 .title-footer img {
+  height: 50px;
+}
+.container-6 .title-footer p {
+  margin-top: 20px;
+  color: #9d9e9d;
+}
+.container-6 ul {
+  list-style-type: none;
+  margin-top: 50px;
+}
+.container-6 ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #9d9e9d;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.container-6 > div:nth-child(4) {
+  width: 200px;
+}
+.container-6 > div:nth-child(4) p {
+  margin-top: 50px;
+  color: #9d9e9d;
+}
+.last-line {
+  display: flex;
+  width: 1109px;
+  margin: 40px 120px;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.last-line span {
+  color: #9d9e9d;
+}
+.last-line div a {
+  text-decoration: none;
+  color: #5a5c5a;
+  margin: 0px 15px;
+}
