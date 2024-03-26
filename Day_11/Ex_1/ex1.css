@@ -6,17 +6,17 @@
 }
 @font-face {
   font-family: Inter;
-  src: url("../Day_11/font/Inter-Regular.ttf");
+  src: url("../Ex_1/font/Inter-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: Poppins-Bold;
-  src: url("../Day_11/font/Poppins-Bold.ttf");
+  src: url("../Ex_1/font/Poppins-Bold.ttf");
   font-weight: 700;
 }
 @font-face {
   font-family: Poppins;
-  src: url("../Day_11/font/Poppins-Regular.ttf");
+  src: url("../Ex_1/font/Poppins-Regular.ttf");
   font-weight: 400;
 }
 /* Start style header */
