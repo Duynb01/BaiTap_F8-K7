@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+@font-face {
+  font-family: Nunito;
+  src: url("../font/Nunito-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Nunito;
+  src: url("../font/Nunito-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Nunito;
+  src: url("../font/Nunito-Bold.ttf");
+  font-weight: 700;
+}
+.wrap-hearder {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  background-color: rgba(34, 34, 34, 0.9);
+  top: 0;
+  left: 0;
+}
+.wrap-hearder a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+.wrap-hearder .wrap-hearder__logo a {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: Nunito;
+  font-weight: 700;
+}
+.wrap-hearder .wrap-hearder__logo a span {
+  color: #ffa500;
+}
+/* Finish wrap-hearder__logo  */
+.wrap-hearder .menu ul {
+  list-style-type: none;
+  display: flex;
+}
+.wrap-hearder .menu ul li a {
+  display: inline-block;
+  padding: 30px 20px;
+}
+
+.wrap-hearder i {
+  position: absolute;
+  display: none;
+}

@@ -1,0 +1,107 @@
+/* .logo svg:nth-of-type(1) {
+    position: relative;
+    top: -8px;
+    margin-right: 8px;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Rajdhani;
+  src: url("../Day_13/font/Rajdhani-Medium.ttf");
+}
+@font-face {
+  font-family: Titilium_Web;
+  src: url("../Day_13/font/TitilliumWeb-Black.ttf");
+}
+body {
+  background: url("../Day_13/image/landing-background.jpg") no-repeat 0 0 /
+    cover scroll;
+}
+.container.title {
+  padding-block: 70px 100px;
+}
+.row-1 .col-12 {
+  display: flex;
+  justify-content: center;
+}
+path {
+  scale: 1.5;
+}
+.row-2 .col-12 {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  font-family: Rajdhani;
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.row-3 .col-12 {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+  font-family: Titilium_Web;
+  color: #fff;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.row-4 .col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-4 .col-12 .btn {
+  display: flex;
+  width: 360px;
+  height: 60px;
+  border: 1px solid #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-family: Rajdhani;
+  font-weight: 700;
+  color: #fff;
+}
+.row-4 .col-12 .btn label:nth-of-type(1) {
+  width: 180px;
+  height: 60px;
+  /* background: transparent; */
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition-property: background;
+  transition-duration: 0.3s;
+}
+.row-4 .col-12 .btn label:nth-of-type(2) {
+  width: 180px;
+  height: 60px;
+  /* background: transparent; */
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background;
+  transition-duration: 0.3s;
+}
+input[id="login"]:checked ~ .title .row-4 .col-12 .btn label[for="login"] {
+  background: #fff;
+  color: #3e3f5e;
+}
+input[id="register"]:checked
+  ~ .title
+  .row-4
+  .col-12
+  .btn
+  label[for="register"] {
+  background: #fff;
+  color: #3e3f5e;
+}
