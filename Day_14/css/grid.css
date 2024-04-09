@@ -40,7 +40,6 @@ Khi gọi class ở màn hình nào thì chỉ hoạt động ở màn hình đ�
   flex-basis: calc(1 / 12 * 100% * var(--column-number));
   max-width: calc(1 / 12 * 100% * var(--column-number));
   padding: 0 calc(var(--column-space) / 2);
-  background-color: aqua;
 }
 [class*="offset-"] {
   margin-left: calc(1 / 12 * 100% * var(--column-offset-number));

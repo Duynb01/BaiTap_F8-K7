@@ -21,40 +21,140 @@
   src: url("../font/Nunito-Bold.ttf");
   font-weight: 700;
 }
-.wrap-hearder {
-  display: flex;
+.wrap-header {
   width: 100%;
-  justify-content: space-between;
   position: fixed;
   background-color: rgba(34, 34, 34, 0.9);
   top: 0;
   left: 0;
+  z-index: 9999;
+  height: 70px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
-.wrap-hearder a {
+.wrap-header__inf {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: center;
+  width: 70%;
+  height: 45px;
+  margin: 0px auto;
+}
+.wrap-header a {
   text-decoration: none;
-  color: black;
+  color: #fff;
   text-transform: capitalize;
 }
-.wrap-hearder .wrap-hearder__logo a {
+.wrap-header .wrap-header__logo a {
   text-transform: uppercase;
   font-size: 25px;
   font-family: Nunito;
   font-weight: 700;
 }
-.wrap-hearder .wrap-hearder__logo a span {
+.wrap-header .wrap-header__logo a span {
   color: #ffa500;
 }
+
 /* Finish wrap-hearder__logo  */
-.wrap-hearder .menu ul {
+
+.wrap-header .menu ul {
   list-style-type: none;
   display: flex;
 }
-.wrap-hearder .menu ul li a {
+.wrap-header .menu ul li {
   display: inline-block;
-  padding: 30px 20px;
+  padding: 0px 10px;
+}
+.wrap-header .wrap-header__inf .menu a:hover {
+  color: #ffa500;
 }
 
-.wrap-hearder i {
+/* Finish .menu */
+
+.wrap-header i {
   position: absolute;
-  display: none;
+  color: #ffa500;
+  font-size: 1.5em;
+  border: 3px solid #ffa500;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  align-content: center;
+  border-radius: 50%;
+  right: 20%;
+  top: 3px;
+  cursor: pointer;
+}
+.wrap-header__inf > a {
+  border: 2px solid #ffa500;
+  padding: 7px 10px;
+  border-radius: 99px;
+  background-color: #ffa500;
+  color: black;
+  font-size: 20px;
+  position: relative;
+}
+.wrap-header__inf > a:hover {
+  background-color: #ffa60046;
+  color: #fff;
+}
+
+/* Finish header */
+
+.home__bg {
+  max-width: 100%;
+  height: 700px;
+  background: url("../image/home.jpg") no-repeat 0 0 / cover scroll;
+  margin: 100px 0px;
+  border-radius: 16px;
+}
+.home__bg .overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.614);
+}
+.home__bg--inf {
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  margin: 10px auto;
+}
+.home__bg--inf .name_city {
+  display: block;
+  font-size: 50px;
+  text-transform: capitalize;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffa500;
+}
+.home__bg--inf h1 {
+  font-size: 80px;
+  text-transform: capitalize;
+}
+.home__bg--inf p {
+  width: 630px;
+  line-height: 30px;
+}
+.home__bg--inf a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px 15px;
+  border-radius: 99px;
+  background-color: #ffa500;
+  border: 2px solid #ffa500;
+}
+.home__bg--inf a:hover {
+  background-color: #ffa60046;
+  color: #fff;
 }

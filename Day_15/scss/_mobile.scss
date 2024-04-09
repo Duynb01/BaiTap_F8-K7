@@ -1,0 +1,25 @@
+@media screen and (max-width: 576px) {
+  .wapper {
+    max-width: 600px;
+    .container {
+      .sidebar {
+        position: fixed;
+        .icon-bar {
+          display: block;
+          position: fixed;
+          margin-left: auto;
+        }
+      }
+      .main {
+        display: block;
+        .wide {
+          grid-row: span 1;
+        }
+        .tall {
+          grid-column: span 2;
+          /*End Main*/
+        }
+      }
+    }
+  }
+}

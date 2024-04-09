@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+  .wapper {
+    max-width: 1000px;
+  }
+  .wapper .container .header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    position: relative;
+  }
+  .wapper .container .header .search-form {
+    width: 160px;
+    order: 3;
+    display: none !important;
+  }
+  .wapper .container .header .menu {
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+    display: none !important;
+  }
+  .wapper .container .header .action {
+    order: 2;
+    display: none !important;
+  }
+  .wapper .container .header .icon-bar {
+    display: block !important;
+  }
+  .wapper .container input[type=checkbox]:checked ~ .header {
+    height: 220px !important;
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
+  .wapper .container input[type=checkbox]:checked ~ .header .search-form, .wapper .container input[type=checkbox]:checked ~ .header .menu, .wapper .container input[type=checkbox]:checked ~ .header .action {
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wapper {
+    max-width: 600px;
+  }
+  .wapper .container .sidebar {
+    position: fixed;
+  }
+  .wapper .container .sidebar .icon-bar {
+    display: block;
+    position: fixed;
+    margin-left: auto;
+  }
+  .wapper .container .main {
+    display: block;
+  }
+  .wapper .container .main .wide {
+    grid-row: span 1;
+  }
+  .wapper .container .main .tall {
+    grid-column: span 2;
+    /*End Main*/
+  }
+}
+/*Container*/
+.wapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.wapper .container {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr;
+  gap: 0px 38px;
+  grid-template-areas: "sidebar header header header header" "sidebar main main main main" "sidebar main main main main" "sidebar main main main main" "sidebar main main main main";
+}
+.wapper .container .sidebar {
+  position: relative;
+  grid-area: sidebar;
+  padding: 5.3rem 0 5.3rem 4.4rem;
+}
+.wapper .container .sidebar > h2 {
+  margin: 6rem 0 5rem 0.2rem;
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+.wapper .container .sidebar .nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.8rem;
+}
+.wapper .container .sidebar .nav .nav-item {
+  display: flex;
+  align-items: center;
+  column-gap: 1.3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background-color 400ms;
+}
+.wapper .container .sidebar .nav .nav-item:hover {
+  background-color: #ebebeb;
+}
+.wapper .container .sidebar .nav .nav-item img {
+  width: 2.2rem;
+  height: 2.2rem;
+  object-fit: contain;
+}
+.wapper .container .sidebar .chat-btn {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  column-gap: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+.wapper .container .sidebar .chat-btn .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  /* End Sidebar */
+}
+.wapper .container .header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5rem;
+  height: 12.8rem;
+}
+.wapper .container .header .search-form {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+.wapper .container .header .search-form #search {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.wapper .container .header .search-form #search::placeholder {
+  color: #000;
+  opacity: 0.2;
+  padding: 0px 2px;
+}
+.wapper .container .header .menu {
+  margin-left: auto;
+  display: flex;
+  column-gap: 4.6rem;
+}
+.wapper .container .header .menu > a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+  padding: 8px 0;
+}
+.wapper .container .header .menu > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #000;
+  transition: width 300ms ease;
+}
+.wapper .container .header .menu > a:hover::after, .wapper .container .header .menu > a.active::after {
+  width: 100%;
+}
+.wapper .container .header .action {
+  display: flex;
+  align-items: center;
+  column-gap: 2.6rem;
+  /*End Header*/
+}
+.wapper .container .header .icon-bar {
+  display: none;
+  font-size: 2.5rem;
+  right: 30px;
+  top: 50px;
+  position: fixed;
+}
+.wapper .container .header .icon-bar label {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.wapper .container .main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: dense;
+  grid-auto-rows: 18.8rem;
+  gap: 2.2rem;
+}
+.wapper .container .main > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.wapper .container .main .wide {
+  grid-column: span 2;
+}
+.wapper .container .main .tall {
+  grid-row: span 2;
+  /*End Main*/
+}
+
+/*# sourceMappingURL=ex01.css.map */

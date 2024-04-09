@@ -1,0 +1,183 @@
+@import "settings";
+@import "variables";
+@import "mixins";
+
+/*Container*/
+
+.wapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    gap: 0px 38px;
+    grid-template-areas:
+      "sidebar header header header header"
+      "sidebar main main main main"
+      "sidebar main main main main"
+      "sidebar main main main main"
+      "sidebar main main main main";
+    // Sidebar
+    .sidebar {
+      position: relative;
+      grid-area: sidebar;
+      padding: 5.3rem 0 5.3rem 4.4rem;
+      > h2 {
+        margin: 6rem 0 5rem 0.2rem;
+        font-size: 3.2rem;
+        font-weight: 800;
+      }
+      .nav {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.8rem;
+        .nav-item {
+          display: flex;
+          align-items: center;
+          column-gap: 1.3rem;
+          font-size: 1.6rem;
+          font-weight: 600;
+          color: $text-color;
+          padding: 6px;
+          border-radius: 6px;
+          transition: background-color 400ms;
+          &:hover {
+            background-color: #ebebeb;
+          }
+          img {
+            width: 2.2rem;
+            height: 2.2rem;
+            object-fit: contain;
+          }
+        }
+      }
+      .chat-btn {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        column-gap: 1.8rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        position: absolute;
+        bottom: 0;
+        cursor: pointer;
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #f6f6f6;
+          /* End Sidebar */
+        }
+      }
+    }
+    //   End Sidebar
+
+    //   Header
+    .header {
+      grid-area: header;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 5rem;
+      height: $header-hight;
+      .search-form {
+        display: flex;
+        align-items: center;
+        column-gap: 18px;
+        #search {
+          font-weight: 600;
+          font-size: 1.8rem;
+          &::placeholder {
+            color: $text-color;
+            opacity: 0.2;
+            padding: 0px 2px;
+          }
+        }
+      }
+      .menu {
+        margin-left: auto;
+        display: flex;
+        column-gap: 4.6rem;
+        > a {
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: $text-color;
+          position: relative;
+          padding: 8px 0;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: $black;
+            transition: width 300ms ease;
+          }
+          &:hover::after,
+          &.active::after {
+            width: 100%;
+          }
+        }
+      }
+      .action {
+        display: flex;
+        align-items: center;
+        column-gap: 2.6rem;
+        /*End Header*/
+      }
+      .icon-bar {
+        display: none;
+        font-size: 2.5rem;
+        right: 30px;
+        top: 50px;
+        position: fixed;
+        label {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgb(0, 0, 0, 0.1);
+        }
+      }
+    }
+    //   End Header
+
+    //   Main
+    .main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-flow: dense;
+      grid-auto-rows: 18.8rem;
+      gap: 2.2rem;
+      > div {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 16px;
+        }
+      }
+      .wide {
+        grid-column: span 2;
+      }
+      .tall {
+        grid-row: span 2;
+        /*End Main*/
+      }
+    }
+  }
+}
+
+//   End Main
