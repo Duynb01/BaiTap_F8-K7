@@ -1,0 +1,25 @@
+# Cấu trúc folder dự án
+
+index.html -->File chạy chính
+scss --> Chứa các file scss
+    - style.scss --> File chạy chính scss (Nối các file khác)
+    - partials
+        - _base.scss
+        - _reset.scss
+        - _mixin.scss
+        - _variables.scss
+    - component
+        - _header.scss
+        - _footer.scss
+        - _breadcrumbs.scss
+    - pages
+        - home
+            - _hero.scss
+            - _products.scss
+        - product
+            - _best_seller.scss
+            - _new_products.scss
+image --> Chức các file ảnh
+fonts --> Chứa các file fonts
+css --> Các file css được generate từ scss
+pages --> Các file html tương ứng với các trang: about.html, product.html, news.html,....

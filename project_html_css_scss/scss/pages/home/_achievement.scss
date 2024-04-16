@@ -1,0 +1,31 @@
+.achievement {
+  .inf-achievement {
+  }
+  .number-achievement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 22px;
+    div {
+      position: relative;
+      svg {
+        display: block;
+      }
+    }
+    .family,
+    .province {
+      width: 294.167px;
+      height: 337.5px;
+      flex-shrink: 0;
+      border-radius: 3.333px;
+      box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+    }
+    .restaurant {
+      width: 342.5px;
+      height: 392.5px;
+      flex-shrink: 0;
+      border-radius: 3.333px;
+      box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+    }
+  }
+}
